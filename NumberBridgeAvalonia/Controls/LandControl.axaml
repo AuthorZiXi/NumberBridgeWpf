@@ -1,0 +1,35 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="50" d:DesignHeight="50"
+             x:Class="NumberBridgeAvalonia.Controls.LandControl">
+    <UserControl.Resources>
+		<ControlTheme x:Key="{x:Type Button}" TargetType="Button">
+			<!--<Setter Property="Template">
+				<ControlTemplate>
+					<Panel>
+						<Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="8000"/>
+						<ContentPresenter x:Name="PART_ContentPresenter"
+						                  Content="{TemplateBinding Content}"
+						                  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+					</Panel>
+					
+				</ControlTemplate>
+			</Setter>-->
+			<Style Selector="^:pointerover">
+				<Setter Property="RenderTransform">
+					<Setter.Value>
+						<ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+					</Setter.Value>
+				</Setter>
+			</Style>
+		</ControlTheme>
+
+	</UserControl.Resources>
+    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+			Name="landButton" Content="0" Click="landButton_Click" 
+			CornerRadius="999"
+			Margin="4"/>
+</UserControl>

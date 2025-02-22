@@ -1,0 +1,40 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ctr="clr-namespace:NumberBridgeAvalonia.Controls"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="NumberBridgeAvalonia.Controls.MainView">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <DockPanel LastChildFill="True" x:Name="appPanel">
+            <StackPanel DockPanel.Dock="Top">
+                <StackPanel HorizontalAlignment="Center">
+                    <Label Content="Number Bridge Avalonia" />
+                    <Label Content="By AuthorZiXi" />
+                    <TextBlock x:Name="Title" DockPanel.Dock="Top"/>
+                </StackPanel>
+                <StackPanel x:Name="stackPanel" Grid.Column="1"  MinHeight="40" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="newButton" Content="新建" Click="newButton_Click"/>
+                    <Button x:Name="solveButton" Content="求解" Click="solveButton_Click" IsEnabled="False"/>
+                    <Button x:Name="checkButton" Content="检查" Click="checkButton_Click"  IsEnabled="False"/>
+                    <Button x:Name="clearBridgeButton" Content="清桥" Click="clearBridgeButton_Click" IsEnabled="False"/>
+                    <Button x:Name="exitButton" Content="退出" Click="exitButton_Click"/>
+                </StackPanel>
+                <ProgressBar Margin="10" x:Name="progressBar" SmallChange="1" />
+            </StackPanel>
+               
+                
+            <Border BorderBrush="#3d3d3d" BorderThickness="3" CornerRadius="3" DockPanel.Dock="Bottom">
+                <Canvas x:Name="GameCanvas" SizeChanged="GameCanvas_OnSizeChanged"/>
+            </Border>
+        </DockPanel>
+        <Panel x:Name="DialogPanel" IsVisible="False">
+            <ctr:SelectSizeDialogControl HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="sizeDialogControl" />
+        </Panel>
+    </Grid>
+    
+    
+</UserControl>

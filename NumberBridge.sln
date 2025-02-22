@@ -18,6 +18,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{00FE
 		view.png = view.png
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberBridgeAvalonia", "NumberBridgeAvalonia\NumberBridgeAvalonia.csproj", "{37BADE19-BAAD-0675-DA4D-9B7A470AC7FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberBridgeAvalonia.Android", "NumberBridgeAvalonia.Android\NumberBridgeAvalonia.Android.csproj", "{1F69DD7D-4B88-9132-239D-18585627BC2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberBridgeAvalonia.Desktop", "NumberBridgeAvalonia.Desktop\NumberBridgeAvalonia.Desktop.csproj", "{96FF698E-7421-30BA-0795-2FF8C7AB6AC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +42,20 @@ Global
 		{2E3205BF-7056-4120-9C64-D98E29E64C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E3205BF-7056-4120-9C64-D98E29E64C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E3205BF-7056-4120-9C64-D98E29E64C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37BADE19-BAAD-0675-DA4D-9B7A470AC7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37BADE19-BAAD-0675-DA4D-9B7A470AC7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37BADE19-BAAD-0675-DA4D-9B7A470AC7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37BADE19-BAAD-0675-DA4D-9B7A470AC7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F69DD7D-4B88-9132-239D-18585627BC2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F69DD7D-4B88-9132-239D-18585627BC2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F69DD7D-4B88-9132-239D-18585627BC2D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1F69DD7D-4B88-9132-239D-18585627BC2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F69DD7D-4B88-9132-239D-18585627BC2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F69DD7D-4B88-9132-239D-18585627BC2D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{96FF698E-7421-30BA-0795-2FF8C7AB6AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96FF698E-7421-30BA-0795-2FF8C7AB6AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96FF698E-7421-30BA-0795-2FF8C7AB6AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96FF698E-7421-30BA-0795-2FF8C7AB6AC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

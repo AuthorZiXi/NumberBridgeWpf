@@ -43,7 +43,7 @@ namespace NumberBridgeWpf
             landControl.landButton.Content = land.Number.ToString();
         }
 
-        private void landButton_Click(object sender, RoutedEventArgs e)
+        private void landButton_Click(object? sender, RoutedEventArgs e)
         {
             if (TargetLand != null)
             LandButtonClickEvent?.Invoke(this, TargetLand);

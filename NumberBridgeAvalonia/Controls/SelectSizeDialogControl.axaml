@@ -1,0 +1,35 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="NumberBridgeAvalonia.Controls.SelectSizeDialogControl">
+    <Border BorderBrush="Cornsilk" BorderThickness="2" CornerRadius="4" >
+        <Grid Margin="12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Label x:Name="Label_Size" Content="选择尺寸" FontSize="26" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" />
+            <Label x:Name="Label_Length" Content="长" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" />
+            <Label x:Name="Label_Width" Content="宽" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" />
+            <Label x:Name="Label_Custom" Content="自定义(无需留空即可)" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0" />
+            <Button IsDefault="True" x:Name="Button_Confirm" Click="Button_Confirm_Click" Content="确定"
+                    VerticalAlignment="Stretch" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" Grid.Row="4" Grid.Column="0" />
+            <Button IsCancel="True" x:Name="Button_Cancel" Click="Button_Cancel_Click" Content="取消"
+                    VerticalAlignment="Stretch" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" Grid.Row="4" Grid.Column="1" />
+            <Slider x:Name="Slider_Length" Grid.Row="1" Grid.Column="1" Minimum="6" Maximum="25" Value="10"
+                    VerticalAlignment="Center" SmallChange="1" LargeChange="5" TickPlacement="BottomRight" />
+            <Slider x:Name="Slider_Width" Grid.Row="2" Grid.Column="1" Minimum="6" Maximum="25" Value="10"
+                    VerticalAlignment="Center" LargeChange="5" SmallChange="1" TickPlacement="BottomRight" />
+            <TextBox x:Name="TextBox_Custom" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" />
+        </Grid>
+    </Border>
+</UserControl>
